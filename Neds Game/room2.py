@@ -32,19 +32,19 @@ class Room:
         self.grabbables.append(item)
 
     def deleta_grabbable(self, item: str) -> None:
-        self.grabbales.remove(item)
+        self.grabbables.remove(item)
 
     def __str__(self) -> str:
-        result = f"you are in {self.name}\n"
+        result = f"You are in {self.name}\n"
 
         result += "You see:"
         for item in self.items.keys():
-            result += item + " "
+            result += "\n\t" + item + " "
         result += "\n"
         
-        result += "Exits: "
+        result += "\n" + "Exits: "
         for exit in self.exits.keys():
-            result += exit + " "
+            result += "\n\t" + exit + " "
         result += "\n"
 
         return result

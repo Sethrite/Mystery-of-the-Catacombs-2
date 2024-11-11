@@ -71,13 +71,14 @@ class Game(Frame):
         # add grabbables to room 1
         # add items to room 1
         r1.add_item("chair", "The chair is made of mahogany and a ghost is sitting on it.")
-        """r1.add_item("death (temporary, to test death effect)", " ")"""
-        r1.add_item("table", "The table is made of very brittle birch. A key rests on it. You pick it up.\n\nA key was added to your inventory.")
+        r1.add_grabbable("key")
+        r1.add_item("table", "The table is made of very brittle birch. A key rests on it")
         
         
         # add exits to room 2
         r2.add_exit("west", r1)# -> to the west of room 2 is room 1
         r2.add_exit("south", r4)# -> to the south of room 2 is room 4
+        r2.add_exit("north", r7)
         # add items to room 2
         r2.add_item("rug", "It is an egyptian rug, you see it slightly hovering above the ground. Under it you discover a stair way leading north!")
         r2.add_item("fireplace", "You pull the lever next to the fireplace. A doorway appears to the east!")
