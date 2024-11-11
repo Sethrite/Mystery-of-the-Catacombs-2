@@ -176,7 +176,7 @@ class Game(Frame):
         
         # add exits to room 12
         r12.add_exit("north", r4) # -> to the north of room 12 is room 4
-        r12.add_exit("south", r12)# -> to the south of room 12 is room 4
+        r12.add_exit("south", r13)# -> to the south of room 12 is room 4
         # add grabbables to room 12
         # No grabbables
         # add items to room 12
