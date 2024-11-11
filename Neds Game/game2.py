@@ -49,20 +49,20 @@ class Game(Frame):
     def setup_game(self):
         
         # create rooms
-        r1 = Room("Room 1", os.path.join("images2","room1.PNG"))
-        r2 = Room("Room 2", os.path.join("images2","room2.PNG"))
-        r3 = Room("Room 3", os.path.join("images2","room3.PNG"))
-        r4 = Room("Room 4", os.path.join("images2","room4.PNG"))
-        r5 = Room("Room 5", os.path.join("images2","room5.PNG"))
-        r6 = Room("Room 6", os.path.join("images2","room6.PNG"))
-        r7 = Room("Room 7", os.path.join("images2","room7.PNG"))
-        r8 = Room("Room 8", os.path.join("images2","room8.PNG"))
-        r9 = Room("Room 9", os.path.join("images2","room9.PNG"))
-        r10 = Room("Room 10", os.path.join("images2","room10.PNG"))
-        r11 = Room("Room 11", os.path.join("images2","room11.PNG"))
-        r12 = Room("Room 12", os.path.join("images2","room12.PNG"))
-        r13 = Room("Room 13", os.path.join("images2","room13.PNG"))
-        
+        r1 = Room("The Start", os.path.join("images2","room1.PNG"))
+        r2 = Room("The Crematorium", os.path.join("images2","room2.PNG"))
+        r3 = Room("The Library", os.path.join("images2","room3.PNG"))
+        r4 = Room("The Brewing Room", os.path.join("images2","room4.PNG"))
+        r5 = Room("The Prince's Room", os.path.join("images2","room5.PNG"))
+        r6 = Room("The Empty Guard Room", os.path.join("images2","room6.PNG"))
+        r7 = Room("The Food Storage", os.path.join("images2","room7.PNG"))
+        r8 = Room("The Treasure Room", os.path.join("images2","room8.PNG"))
+        r9 = Room("The King's Tomb", os.path.join("images2","room9.PNG"))
+        r10 = Room("The Guards Room", os.path.join("images2","room10.PNG"))
+        r11 = Room("The Equipment Room", os.path.join("images2","room11.PNG"))
+        r12 = Room("The Gate", os.path.join("images2","room12.PNG"))
+        r13 = Room("Outside", os.path.join("images2","room13.PNG"))
+
         # create exits to rooms
     
     # add exits to room 1
@@ -187,7 +187,7 @@ class Game(Frame):
         # add grabbables to room 13
         # No grabbables
         # add items to room 13
-
+        # no items
             # set room 1 as the current room at the beginning of the game
         self.current_room = r1
 
