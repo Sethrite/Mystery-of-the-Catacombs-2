@@ -49,10 +49,10 @@ class Game(Frame):
     def setup_game(self):
 
         # create rooms
-        r1 = Room("Room 1", os.path.join("images","room1.jpg"))
-        r2 = Room("Room 2", os.path.join("images","room2.jpg"))
-        r3 = Room("Room 3", os.path.join("images","room3.jpg"))
-        r4 = Room("Room 4", os.path.join("images","room4.jpg"))
+        r1 = Room("Room 1", os.path.join("images","room1.PNG"))
+        r2 = Room("Room 2", os.path.join("images","room2.PNG"))
+        r3 = Room("Room 3", os.path.join("images","room3.PNG"))
+        r4 = Room("Room 4", os.path.join("images","room4.PNG"))
         
         # create exits to rooms
 
