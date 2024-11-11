@@ -176,13 +176,14 @@ class Game(Frame):
         
         # add exits to room 12
         r12.add_exit("north", r4) # -> to the north of room 12 is room 4
-        r12.add_exit("south", r12)# -> to the south of room 12 is room 4
+        r12.add_exit("south", r13)# -> to the south of room 12 is room 4
         # add grabbables to room 12
         # No grabbables
         # add items to room 12
         r12.add_item("locked_gate", "In the door you see three spaces for three objects. The spaces for the artifacts seem relatively small.")
         
         # add exits to room 13
+        r13.add_exit("north", r12)
         # No Exits
         # add grabbables to room 13
         # No grabbables
@@ -220,7 +221,7 @@ class Game(Frame):
 
     def set_image(self):
         if self.current_room == None:
-            img = PhotoImage(file="images/skull.gif")
+            img = PhotoImage(file="images2/skull.PNG")
         else:
             img = PhotoImage(file=self.current_room.image)
         
