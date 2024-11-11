@@ -220,7 +220,7 @@ class Game(Frame):
 
     def set_image(self):
         if self.current_room == None:
-            img = PhotoImage(file="images/skull.gif")
+            img = PhotoImage(file="images2/skull.PNG")
         else:
             img = PhotoImage(file=self.current_room.image)
         
