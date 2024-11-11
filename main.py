@@ -6,7 +6,7 @@ from tkinter import Tk
 from game import Game
 
 window = Tk()
-window.title("Room Adventure Reloaded")
+window.title("Mystery of the Catacombs 2")
 game = Game(window)
 game.play()
 game.mainloop()
