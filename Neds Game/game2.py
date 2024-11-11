@@ -110,9 +110,9 @@ class Game(Frame):
         # add exits to room 5
         r5.add_exit("north", r6) # -> to the north of room 5 is room 6
         # add grabbables to room 5
-        # No grabbables
+        r5.add_grabbable("ring")
         # add items to room 5
-        r5.add_item("casket","You see a diamond ring next to the wrapped body. You found an artifact!\n\nA diamond ring was added to your inventory.")
+        r5.add_item("casket","You see a diamond ring next to the wrapped body. You found an artifact!")
         r5.add_item("painting","The artwork depicts a long lost land, with the an ancient scroll positioned at the center.")
         r5.add_item("cobwebs","")
         
@@ -129,7 +129,7 @@ class Game(Frame):
 
         # add exits to room 7
         r7.add_exit("south", r2) # -> to the south of room 7 is room 2
-        r7.add_exit("east", r8)
+        r7.add_exit("west", r8)
         # add grabbables to room 7
         r7.add_grabbable("serapias_herb")
         r7.add_grabbable("rat")
@@ -145,19 +145,20 @@ class Game(Frame):
         r8.add_grabbable("gold")
         r8.add_grabbable("jewelry")
         r8.add_grabbable("priceless_painting")
+        r8.add_grabbable("ruby_goblet")
         # add items to room 8
         r8.add_item("gold", "You see a stack of gold on the floor, it looks very appealing.\n\nYou hear a voice say 'You should take some.'")
         r8.add_item("jewelry", "You see a stack of jewelry on the floor, it looks really appealing.\n\nYou hear a voice say 'You should take some'.")
         r8.add_item("gems", "The gems glisten on the floor of the room, it looks extremely appealing.\n\nYou hear a voice say 'You should take some.'")
         r8.add_item("priceless_painting", "The painting displays a starry night above a dark blue city, the painting would look perfect on your wall.\n\nYou hear a voice say 'You should take it.'")
-        r8.add_item("ruby_goblet", "You see a golden goblet with a ruby gem ingrained upon it. You found an artifact!\n\nA ruby goblet was added to your inventory.")
+        r8.add_item("ruby_goblet", "You see a golden goblet with a ruby gem ingrained upon it. You found an artifact!")
         
         # add exits to room 9
         r9.add_exit("south", r10) # -> to the south of room 9 is room 10
         # add grabbables to room 9
-        # No grabbable
+        r9.add_grabbable("crown")
         # add items to room 9
-        r9.add_item("casket", "You see a the king's crown next to the mummified body. You found an artifact!\n\nThe king's crown was added to your inventory.")
+        r9.add_item("casket", "You see a the king's crown next to the mummified body. You found an artifact!")
         r9.add_item("crack", "")
         r9.add_item("scroll", "You pick up the scroll and it has some ancient language written on it. You do not understand what it says.")
         
@@ -174,7 +175,7 @@ class Game(Frame):
         # add grabbables to room 11
         r11.add_grabbable("code")
         # add items to room 11
-        r11.add_item("shovel", "You see a code for a door attached to the shovel's head.\n\nA code was added to your inventory.")
+        r11.add_item("shovel", "You see a code for a door attached to the shovel's head")
         r11.add_item("pickaxe", "The pickaxe is is missing its shaft. It is unusable.")
         r11.add_item("sword", "The sword is rusted and shattered. It is unsuitable for combat")
         r11.add_item("shield", "The shield is burnt and split in half. It is out of commission.")
