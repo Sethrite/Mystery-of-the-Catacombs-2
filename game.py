@@ -148,7 +148,7 @@ class Game(Frame):
         r7.add_grabbable("rat")
         # add items to room 7
         r7.add_item("rat", "In the corner you see the carcas of a rat from long ago and for some reason it did not decompose.")
-        r7.add_item("serapias_herb", "You find it inside a wooden barrel. The plant's smell makes you drowsy.")
+        r7.add_item("serapias_herb", "You find it   ide a wooden barrel. The plant's smell makes you drowsy.")
         r7.add_item("cabinet", "You move the cabinet and discover a secret door to the west. You notice it has a keyhole.")
         
         # add exits to room 8
@@ -329,7 +329,7 @@ def STARTGAME():
                         # inventory
                         inventory.append(grabbable)
                         # remove the grabbable item from the room
-                        currentRoom.delGrabbable(grabbable)
+                        currentRoom.delete_grabbable(grabbable)
                         # set the response (success)
                         response = f"Item grabbed. {grabbable} was added to your inventory"
                         # no need to check any more grabbable items
