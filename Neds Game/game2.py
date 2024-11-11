@@ -114,7 +114,7 @@ class Game(Frame):
         # add items to room 5
         r5.add_item("casket","You see a diamond ring next to the wrapped body. You found an artifact!")
         r5.add_item("painting","The artwork depicts a long lost land, with the an ancient scroll positioned at the center.")
-        r5.add_item("cobwebs","")
+        r5.add_item("cobwebs","Its silky, stringy, and white. There's dust hanging off of it along with a large black widow")
         
         # add exits to room 6
         r6.add_exit("west", r2) # -> to the west of room 6 is room 2
@@ -123,7 +123,7 @@ class Game(Frame):
         r6.add_grabbable("coin")
         # add items to room 6
         r6.add_item("armor","You see armor lying on the floor and there are remanents of human ash on it.")
-        r6.add_item("pressure_plate","")
+        r6.add_item("pressure_plate","You hear a click. And for a silence ensues...")
         r6.add_item("coin","The coin has the face of the dead king and is worth a wooping $5.")
         r6.add_item("door", "You try to open the door, but you need a code. The door leads to the prince's room.")
 
@@ -159,7 +159,7 @@ class Game(Frame):
         r9.add_grabbable("crown")
         # add items to room 9
         r9.add_item("casket", "You see a the king's crown next to the mummified body. You found an artifact!")
-        r9.add_item("crack", "")
+        r9.add_item("crack", "Its an oddly shaped crack in the floor. For some reason it reminds you of a lightning bolt.")
         r9.add_item("scroll", "You pick up the scroll and it has some ancient language written on it. You do not understand what it says.")
         
         # add exits to room 10
