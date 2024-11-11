@@ -850,7 +850,7 @@ class Game(Frame):
         
         # add exits to room 12
         r12.add_exit("north", r4) # -> to the north of room 12 is room 4
-        r12.add_exit("south", r12)# -> to the south of room 12 is room 4
+        r12.add_exit("south", r13)# -> to the south of room 12 is room 13
         # add grabbables to room 12
         # No grabbables
         # add items to room 12
@@ -861,25 +861,6 @@ class Game(Frame):
         # add grabbables to room 13
         # No grabbables
         # add items to room 13
-
-        # set room 1 as the current room at the beginning of the game
-        currentRoom = r1
-        
-    ######################################################################
-    # START THE GAME!!!
-
-    Duplicate = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
-    def MainMenu():
-        print("\t\tMystery of the Catacombs\n")
-        sleep(0.3)
-        print("\t\t    New Game\n")
-        sleep(0.2)
-        print("\t\t    Exit Game\n")
-        print("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t Ver 1.1")
-        print(border)
-        sleep(0.3)
-        choice()
 
     def setup_gui(self):
 
