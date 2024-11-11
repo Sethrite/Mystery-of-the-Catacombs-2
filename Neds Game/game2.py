@@ -183,6 +183,7 @@ class Game(Frame):
         r12.add_item("locked_gate", "In the door you see three spaces for three objects. The spaces for the artifacts seem relatively small.")
         
         # add exits to room 13
+        r13.add_exit("north", r12)
         # No Exits
         # add grabbables to room 13
         # No grabbables
