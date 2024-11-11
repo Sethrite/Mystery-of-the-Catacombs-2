@@ -79,6 +79,7 @@ class Game(Frame):
         r2.add_exit("west", r1)# -> to the west of room 2 is room 1
         r2.add_exit("south", r4)# -> to the south of room 2 is room 4
         r2.add_exit("north", r7)
+        r2.add_exit("east", r6)
         # add items to room 2
         r2.add_item("rug", "It is an egyptian rug, you see it slightly hovering above the ground. Under it you discover a stair way leading north!")
         r2.add_item("fireplace", "You pull the lever next to the fireplace. A doorway appears to the east!")
@@ -117,6 +118,7 @@ class Game(Frame):
         
         # add exits to room 6
         r6.add_exit("west", r2) # -> to the west of room 6 is room 2
+        r5.add_exit("south", r5)
         # add grabbables to room 6
         r6.add_grabbable("coin")
         # add items to room 6
@@ -124,8 +126,10 @@ class Game(Frame):
         r6.add_item("pressure_plate","")
         r6.add_item("coin","The coin has the face of the dead king and is worth a wooping $5.")
         r6.add_item("door", "You try to open the door, but you need a code. The door leads to the prince's room.")
+
         # add exits to room 7
         r7.add_exit("south", r2) # -> to the south of room 7 is room 2
+        r7.add_exit("east", r8)
         # add grabbables to room 7
         r7.add_grabbable("serapias_herb")
         r7.add_grabbable("rat")
